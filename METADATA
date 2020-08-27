@@ -1,18 +1,19 @@
 name: "rand_chacha"
-description:
-    "ChaCha random number generator"
-
+description: "ChaCha random number generator"
 third_party {
   url {
     type: HOMEPAGE
     value: "https://crates.io/crates/rand_chacha"
   }
   url {
-    type: GIT
-    value: "https://github.com/rust-random/rand"
+    type: ARCHIVE
+    value: "https://static.crates.io/crates/rand_chacha/rand_chacha-0.2.2.crate"
   }
   version: "0.2.2"
-  last_upgrade_date { year: 2020 month: 6 day: 18 }
-  # Dual-licensed, using the least restrictive per go/thirdpartylicenses#same.
   license_type: NOTICE
+  last_upgrade_date {
+    year: 2020
+    month: 6
+    day: 18
+  }
 }
