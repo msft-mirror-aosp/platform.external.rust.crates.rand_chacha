@@ -1,6 +1,6 @@
 [package]
 name = "rand_chacha"
-version = "0.2.2"
+version = "0.3.0"
 authors = ["The Rand Project Developers", "The Rust Project Developers", "The CryptoCorrosion Contributors"]
 license = "MIT OR Apache-2.0"
 readme = "README.md"
@@ -14,15 +14,11 @@ keywords = ["random", "rng", "chacha"]
 categories = ["algorithms", "no-std"]
 edition = "2018"
 
-[badges]
-travis-ci = { repository = "rust-random/rand" }
-appveyor = { repository = "rust-random/rand" }
-
 [dependencies]
-rand_core = { path = "../rand_core", version = "0.5" }
-ppv-lite86 = { version = "0.2.6", default-features = false, features = ["simd"] }
+rand_core = { path = "../rand_core", version = "0.6.0" }
+ppv-lite86 = { version = "0.2.8", default-features = false, features = ["simd"] }
 
 [features]
-default = ["std", "simd"]
+default = ["std"]
 std = ["ppv-lite86/std"]
 simd = [] # deprecated
