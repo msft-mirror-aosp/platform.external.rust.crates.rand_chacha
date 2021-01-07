@@ -8,7 +8,6 @@ rust_library {
     edition: "2018",
     features: [
         "default",
-        "simd",
         "std",
     ],
     rustlibs: [
@@ -18,5 +17,5 @@ rust_library {
 }
 
 // dependent_library ["feature_list"]
-//   ppv-lite86-0.2.8 "simd,std"
-//   rand_core-0.5.1
+//   ppv-lite86-0.2.10 "simd,std"
+//   rand_core-0.6.0
