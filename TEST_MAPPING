@@ -227,7 +227,7 @@
       "name": "tokio_device_test_tests_uds_split"
     },
     {
-      "name": "vpnprofilestore_test"
+      "name": "legacykeystore_test"
     }
   ]
 }
