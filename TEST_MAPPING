@@ -11,10 +11,34 @@
       "name": "base64_device_test_tests_helpers"
     },
     {
+      "name": "crossbeam-deque_device_test_src_lib"
+    },
+    {
+      "name": "crossbeam-deque_device_test_tests_fifo"
+    },
+    {
+      "name": "crossbeam-deque_device_test_tests_injector"
+    },
+    {
+      "name": "crossbeam-deque_device_test_tests_lifo"
+    },
+    {
+      "name": "crossbeam-deque_device_test_tests_steal"
+    },
+    {
       "name": "crossbeam-epoch_device_test_src_lib"
     },
     {
       "name": "crossbeam-epoch_device_test_tests_loom"
+    },
+    {
+      "name": "crossbeam-queue_device_test_src_lib"
+    },
+    {
+      "name": "crossbeam-queue_device_test_tests_array_queue"
+    },
+    {
+      "name": "crossbeam-queue_device_test_tests_seg_queue"
     },
     {
       "name": "crossbeam-utils_device_test_src_lib"
@@ -41,7 +65,16 @@
       "name": "keystore2_test"
     },
     {
+      "name": "keystore2_test_utils_test"
+    },
+    {
       "name": "legacykeystore_test"
+    },
+    {
+      "name": "mio_device_test_src_lib"
+    },
+    {
+      "name": "rand_chacha_device_test_src_lib"
     },
     {
       "name": "tokio_device_test_tests__require_full"
