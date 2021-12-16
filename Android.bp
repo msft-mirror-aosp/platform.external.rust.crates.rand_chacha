@@ -60,14 +60,18 @@ rust_library {
     ],
 }
 
-rust_defaults {
-    name: "rand_chacha_test_defaults",
+rust_test {
+    name: "rand_chacha_test_src_lib",
+    host_supported: true,
     crate_name: "rand_chacha",
-    srcs: ["src/lib.rs"],
     cargo_env_compat: true,
     cargo_pkg_version: "0.3.1",
+    srcs: ["src/lib.rs"],
     test_suites: ["general-tests"],
     auto_gen_config: true,
+    test_options: {
+        unit_test: true,
+    },
     edition: "2018",
     features: [
         "default",
@@ -78,17 +82,4 @@ rust_defaults {
         "librand_core",
         "libserde_json",
     ],
-}
-
-rust_test_host {
-    name: "rand_chacha_host_test_src_lib",
-    defaults: ["rand_chacha_test_defaults"],
-    test_options: {
-        unit_test: true,
-    },
-}
-
-rust_test {
-    name: "rand_chacha_device_test_src_lib",
-    defaults: ["rand_chacha_test_defaults"],
 }
